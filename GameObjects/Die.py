@@ -6,9 +6,9 @@ class Die :
         self.face = 1
         self.fixed = false
     def roll(self) :
-        if !self.fixed :
+        if not self.fixed :
             self.face = random.randint(1,6)
-        else
+        else :
             raise Errors.DieFixedError("This Die is fixed and can not be rolled")
     def getFace(self) :
         return self.face
@@ -16,3 +16,5 @@ class Die :
         self.fixed = true
     def unfix(self) :
         self.fixed = false
+    def isFixed(self) :
+        return self.fixed

@@ -4,7 +4,7 @@ class Player :
         self.name = name
         self.lowerBlock = LowerBlock.LowerBlock()
         self.upperBlock = UpperBlock.UpperBlock()
-    def getLowerBlock(self)
+    def getLowerBlock(self) :
         return self.lowerBlock
-    def getUpperBlock(self)
+    def getUpperBlock(self) :
         return self.upperBlock
